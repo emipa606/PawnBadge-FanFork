@@ -3,7 +3,7 @@
     <identifier>RR_PawnBadge</identifier>
     <version>0.1.0.0</version>
     <dependencies>
-        <li>HugsLib &gt;= 6.0</li>
+        <li>HugsLib &gt;= 1.2.0.0</li>
     </dependencies>
     <manifestUri>https://raw.githubusercontent.com/RangelReale/RR_PawnBadge/master/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/RangelReale/RR_PawnBadge/releases/latest</downloadUri>
