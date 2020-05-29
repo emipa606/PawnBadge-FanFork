@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Pawn Badge</name>
+  <name>Pawn Badge Fan Fork</name>
   <author>Rangel Reale (original), updated by Saucy_Pigeon</author>
   <url></url>
   <supportedVersions>
     <li>1.0</li>
 	<li>1.1</li>
   </supportedVersions>
-  <description>
-    Allows adding up to 2 informative badges to the colonist bar.
-  </description>
+  <description>Allows adding up to 2 informative badges to the colonist bar.
+
+Credits:
+- Rangel Reale, the original author of the mod.
+- LeninsCat, for fixing the manifest error message and providing excellent updated textures.</description>
   <packageId>SaucyPigeon.PawnBadge</packageId>
   <modDependencies>
     <li>
