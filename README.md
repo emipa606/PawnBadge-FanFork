@@ -27,7 +27,7 @@ In your mod's "About/About.xml" file, add the following XML:
 </loadAfter>
 ```
 
-And in your mod "Defs" directory create a XML file like this:
+And in your mod "Defs" directory create an XML file like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
