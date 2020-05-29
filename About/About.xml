@@ -7,7 +7,11 @@
     <li>1.0</li>
 	<li>1.1</li>
   </supportedVersions>
-  <description>Allows adding up to 2 informative badges to the colonist bar.
+  <description>The fan fork of the mod "Pawn Badge" by Rangel Real which allows adding up to 2 informative badges to the colonist bar.
+  
+Any badge mods made for the original mod will be compatible with this mod.
+
+Can be safely added and removed from save games.
 
 Credits:
 - Rangel Reale, the original author of the mod.
