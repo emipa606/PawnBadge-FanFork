@@ -9,7 +9,25 @@ Download:
 
 ### Custom Icons
 
-To make a mod to add more badge icons, in your mod "Defs" directory create a XML file like this:
+To make a mod to add more badge icons, follow these steps:
+
+In your mod's "About/About.xml" file, add the following XML:
+```xml
+<modDependencies>
+	  <li>
+		    <packageId>SaucyPigeon.PawnBadge</packageId>
+		    <displayName>Pawn Badge Fan Fork</displayName>
+		    <downloadUrl>https://github.com/SaucyPigeon/RR_PawnBadge/releases/latest</downloadUrl>
+		    <steamWorkshopUrl></steamWorkshopUrl>
+	  </li>
+</modDependencies>
+
+<loadAfter>
+	  <li>SaucyPigeon.PawnBadge</li>
+</loadAfter>
+```
+
+And in your mod "Defs" directory create a XML file like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
