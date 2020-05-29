@@ -16,11 +16,11 @@ namespace RR_PawnBadge
 
         Mod() : base()
         {
-			var harmony = new Harmony("RR_PawnBadge");
+			var harmony = new Harmony("SaucyPigeon.PawnBadge");
 			harmony.PatchAll();
         }
 
-        public override string ModIdentifier => "RR_PawnBadge";
+        public override string ModIdentifier => "SaucyPigeon.PawnBadge";
 
         public override void DefsLoaded()
         {

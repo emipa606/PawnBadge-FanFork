@@ -1,0 +1,7 @@
+- Compatibility with RimWorld version 1.0
+- Compatibility with RimWorld version 1.1
+- Settings change correctly
+- Settings are saved and loaded correctly
+- Mod can be added in middle of save
+- Mod can be removed in middle of save
+- Mod can be swapped with original version in middle of save

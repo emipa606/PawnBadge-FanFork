@@ -21,7 +21,7 @@ namespace RR_PawnBadge
         public ITab_Pawn_Badge()
         {
             this.size = new UnityEngine.Vector2(500f, 470f); ;
-            this.labelKey = "TabBadge";
+            this.labelKey = "PawnBadge.BadgeTab";
         }
 
         private Pawn SelPawnForBadgeInfo

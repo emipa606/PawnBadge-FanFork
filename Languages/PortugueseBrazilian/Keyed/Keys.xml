@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-    <TabBadge>Emblema</TabBadge>
+    <PawnBadge.BadgeTab>Emblema</PawnBadge.BadgeTab>
     <PawnBadge.BadgeNumber>Emblema {0}</PawnBadge.BadgeNumber>
     <PawnBadge.BadgePosition>Posição do emblema</PawnBadge.BadgePosition>
     <PawnBadge.BadgePosition_Top>Em cima</PawnBadge.BadgePosition_Top>
