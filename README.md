@@ -32,4 +32,5 @@ See [this](https://github.com/RangelReale/RR_PawnBadge_BadgeSample) repository f
 ### Author
 
 Rangel Reale (original)
+
 Saucy_Pigeon (updated code)
