@@ -29,8 +29,10 @@ Put a "Crown.png" file in the "Textures/PawnBadge" directory, and it's done!
 
 See [this](https://github.com/RangelReale/RR_PawnBadge_BadgeSample) repository for a sample of a mod adding a new icon.
 
-### Author
+### Credits
 
-Rangel Reale (original)
+Rangel Reale (original author)
 
 Saucy_Pigeon (updated code)
+
+LeninsCat (fixed manifest error, updated textures)
