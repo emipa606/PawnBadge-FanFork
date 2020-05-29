@@ -5,7 +5,7 @@ A RimWorld mod that allows adding up to 2 informative badges to the colonist bar
 ![Screenshot](About/Preview.png)
 
 Download:
-[https://github.com/RangelReale/RR_PawnBadge/releases/latest](https://github.com/RangelReale/RR_PawnBadge/releases/latest)
+[https://github.com/SaucyPigeon/RR_PawnBadge/releases/latest](https://github.com/SaucyPigeon/RR_PawnBadge/releases/latest)
 
 ### Custom Icons
 
@@ -31,4 +31,6 @@ See [this](https://github.com/RangelReale/RR_PawnBadge_BadgeSample) repository f
 
 ### Author
 
-Rangel Reale
+Rangel Reale (original)
+
+Saucy_Pigeon (updated code)
