@@ -1,0 +1,2 @@
+Need to keep library dlls because cannot control output of dependencies with Nuget.
+Can be fixed.

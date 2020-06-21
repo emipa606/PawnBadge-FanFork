@@ -68,10 +68,56 @@ namespace RR_PawnBadge
 			GUI.EndGroup();
 		}
 
+
+		private static string GetBadgePositionKey(int badgeIndex)
+		{
+			var positionOffset = Settings.badgePosition;
+
+			if (badgeIndex == 0)
+			{
+				switch (positionOffset)
+				{
+					case Settings.BadgePosition.Top:
+						return "PawnBadge.BadgePosition_TopLeft";
+					case Settings.BadgePosition.Bottom:
+						return "PawnBadge.BadgePosition_BottomLeft";
+					case Settings.BadgePosition.Left:
+						return "PawnBadge.BadgePosition_TopLeft";
+					case Settings.BadgePosition.Right:
+						return "PawnBadge.BadgePosition_TopRight";
+					default:
+						throw new EnumValueOutOfRange(typeof(Settings.BadgePosition), positionOffset, nameof(positionOffset));
+				}
+			}
+			else if (badgeIndex == 1)
+			{
+
+				switch (positionOffset)
+				{
+					case Settings.BadgePosition.Top:
+						return "PawnBadge.BadgePosition_TopRight";
+					case Settings.BadgePosition.Bottom:
+						return "PawnBadge.BadgePosition_BottomRight";
+					case Settings.BadgePosition.Left:
+						return "PawnBadge.BadgePosition_BottomLeft";
+					case Settings.BadgePosition.Right:
+						return "PawnBadge.BadgePosition_BottomRight";
+					default:
+						throw new EnumValueOutOfRange(typeof(Settings.BadgePosition), positionOffset, nameof(positionOffset));
+				}
+			}
+			else
+			{
+				throw new ArgumentOutOfRangeException(nameof(badgeIndex), $"Value of {nameof(badgeIndex)} ({badgeIndex}) must be either zero or one.");
+			}
+		}
+
 		private void DoBadgeDisplay(int i, IList<Rect> badgeRects, CompBadge cb)
 		{
 			Rect outRect = new Rect(badgeRects[i].ContractedBy(12f));
-			string title = "PawnBadge.BadgeNumber".Translate(i + 1);
+			// Badge {i + 1} ({GetBadgePosition(i)})
+			string badgePositionString = GetBadgePositionKey(i).Translate();
+			string title = "PawnBadge.BadgeNumber".Translate(i + 1, badgePositionString);
 			Vector2 textSize = Text.CalcSize(title);
 
 			Widgets.Label(new Rect(outRect.x, outRect.y, outRect.width, textSize.y), title);
