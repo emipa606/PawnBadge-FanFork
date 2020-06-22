@@ -125,16 +125,17 @@ namespace RR_PawnBadge
 
 			Rect badgeRect = outRect;
 			badgeRect.width -= 16f;
-			badgeRect.height = 9999f;
+			LayoutManager layout = new LayoutManager(badgeRect, 40f, 30f);
+			List<BadgeDef> defs = new List<BadgeDef>(DefDatabase<BadgeDef>.AllDefsListForReading);
+			defs.Insert(0, new BadgeDef("", Mod.GreyTex));
+
+			badgeRect.height = layout.MaxHeightNeeded(defs.Count());
 
 			Widgets.BeginScrollView(outRect, ref scrollPositions[i], badgeRect, true);
 
 
 
-			LayoutManager layout = new LayoutManager(badgeRect, 40f, 30f);
 
-			List<BadgeDef> defs = new List<BadgeDef>(DefDatabase<BadgeDef>.AllDefsListForReading);
-			defs.Insert(0, new BadgeDef("", Mod.GreyTex));
 
 			foreach (BadgeDef def in defs)
 			{
@@ -202,6 +203,13 @@ namespace RR_PawnBadge
             {
                 get { return new Rect(this.curX, this.curY, this.itemWidth, this.itemHeight); }
             }
+
+			public float MaxHeightNeeded(int count)
+			{
+				int nPerRow = (int)(rect.xMax / itemWidth);
+				int columnsN = Mathf.CeilToInt(count / (float)nPerRow);
+				return columnsN * itemHeight;
+			}
 
             public void Next()
             {
