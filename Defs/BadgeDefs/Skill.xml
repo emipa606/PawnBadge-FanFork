@@ -31,7 +31,7 @@
 	<RR_PawnBadge.BadgeDef>
 		<defName>Skill_Medicine</defName>
 		<label>Medicine</label>
-		<description>Medicine Skill</description>
+		<description>Skill - Medicine</description>
 		<icon>PawnBadge/Skill/Medicine</icon>
 	</RR_PawnBadge.BadgeDef>
 	
