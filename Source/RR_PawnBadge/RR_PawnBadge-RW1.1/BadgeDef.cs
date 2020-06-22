@@ -11,6 +11,7 @@ namespace RR_PawnBadge
     {
         private Texture2D symbolTex;
         public string icon;
+		public bool fromBaseMod;
 
         public BadgeDef() : base()
         {
@@ -22,6 +23,7 @@ namespace RR_PawnBadge
             this.defName = defName;
             this.description = "";
             this.symbolTex = symbolTex;
+			this.fromBaseMod = false;
         }
 
         public Texture2D Symbol

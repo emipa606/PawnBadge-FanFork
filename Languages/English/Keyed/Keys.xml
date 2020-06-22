@@ -21,5 +21,7 @@
     <PawnBadge.BadgeSize_Large>Large</PawnBadge.BadgeSize_Large>
 	
 	<PawnBadge.NoBadge>No badge</PawnBadge.NoBadge>
+	
+	<PawnBadge.DisableBaseBadges>Disable base badges</PawnBadge.DisableBaseBadges>
 
 </LanguageData>

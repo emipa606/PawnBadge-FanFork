@@ -126,7 +126,7 @@ namespace RR_PawnBadge
 			Rect badgeRect = outRect;
 			badgeRect.width -= 16f;
 			LayoutManager layout = new LayoutManager(badgeRect, 40f, 30f);
-			List<BadgeDef> defs = new List<BadgeDef>(DefDatabase<BadgeDef>.AllDefsListForReading);
+			List<BadgeDef> defs = new List<BadgeDef>(DefDatabase<BadgeDef>.AllDefsListForReading.Where(x => !(Settings.disableBaseBadges && x.fromBaseMod)));
 			defs.Insert(0, new BadgeDef("", Mod.GreyTex));
 
 			badgeRect.height = layout.MaxHeightNeeded(defs.Count());

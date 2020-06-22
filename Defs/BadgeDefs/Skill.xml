@@ -9,6 +9,7 @@
 		<label>Shooting</label>
 		<description>Skill - Shooting</description>
 		<icon>PawnBadge/Skill/Shooting</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Melee -->
@@ -17,6 +18,7 @@
 		<label>Melee</label>
 		<description>Skill - Melee</description>
 		<icon>PawnBadge/Skill/Melee</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Cooking -->
@@ -25,6 +27,7 @@
 		<label>Cooking</label>
 		<description>Skill - Cooking</description>
 		<icon>PawnBadge/Skill/Cooking</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Medicine -->
@@ -33,6 +36,7 @@
 		<label>Medicine</label>
 		<description>Skill - Medicine</description>
 		<icon>PawnBadge/Skill/Medicine</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Hauling -->
@@ -41,6 +45,7 @@
 		<label>Hauling</label>
 		<description>Skill - Hauling</description>
 		<icon>PawnBadge/Skill/Haul</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Animal -->
@@ -49,6 +54,7 @@
 		<label>Animal</label>
 		<description>Skill - Animal</description>
 		<icon>PawnBadge/Skill/Animal</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Art -->
@@ -57,6 +63,7 @@
 		<label>Art</label>
 		<description>Skill - Art</description>
 		<icon>PawnBadge/Skill/Art</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Cleaning -->
@@ -65,6 +72,7 @@
 		<label>Cleaning</label>
 		<description>Skill - Cleaning</description>
 		<icon>PawnBadge/Skill/Cleaning</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Construction --> 
@@ -73,6 +81,7 @@
 		<label>Construction</label>
 		<description>Skill - Construction</description>
 		<icon>PawnBadge/Skill/Construction</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Firefight -->
@@ -81,6 +90,7 @@
 		<label>Firefight</label>
 		<description>Skill - Firefight</description>
 		<icon>PawnBadge/Skill/Firefight</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Intellectual -->
@@ -89,6 +99,7 @@
 		<label>Intellectual</label>
 		<description>Skill - Intellectual</description>
 		<icon>PawnBadge/Skill/Intellectual</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Mining -->
@@ -97,6 +108,7 @@
 		<label>Mining</label>
 		<description>Skill - Mining</description>
 		<icon>PawnBadge/Skill/Mining</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Plant -->
@@ -105,6 +117,7 @@
 		<label>Plant</label>
 		<description>Skill - Plant</description>
 		<icon>PawnBadge/Skill/Plant</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Social -->
@@ -113,6 +126,7 @@
 		<label>Social</label>
 		<description>Skill - Social</description>
 		<icon>PawnBadge/Skill/Social</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Trade -->
@@ -121,6 +135,7 @@
 		<label>Trade</label>
 		<description>Skill - Trade</description>
 		<icon>PawnBadge/Skill/Trade</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	
@@ -130,6 +145,7 @@
 		<label>Crafting</label>
 		<description>Skill - Crafting</description>
 		<icon>PawnBadge/Skill/Crafting</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	
@@ -139,6 +155,7 @@
 		<label>Fishing</label>
 		<description>Skill - Fishing</description>
 		<icon>PawnBadge/Skill/Fishing</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 </Defs>

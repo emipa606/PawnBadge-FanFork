@@ -9,6 +9,7 @@
 		<label>Militar - Private</label>
 		<description>US Militar Rank - Private</description>
 		<icon>PawnBadge/Militar/i1-private</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Private First Class -->
@@ -17,6 +18,7 @@
 		<label>Militar - Private First Class</label>
 		<description>US Militar Rank - Private First Class</description>
 		<icon>PawnBadge/Militar/i2-privatefc</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 
 	<!-- Corporal -->
@@ -25,6 +27,7 @@
 		<label>Militar - Corporal</label>
 		<description>US Militar Rank - Corporal</description>
 		<icon>PawnBadge/Militar/i3-corporal</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Sergeant -->
@@ -33,6 +36,7 @@
 		<label>Militar - Sergeant</label>
 		<description>US Militar Rank - Sergeant</description>
 		<icon>PawnBadge/Militar/i4-sergeant</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Staff Sergeant -->
@@ -41,6 +45,7 @@
 		<label>Militar - Staff Sergeant</label>
 		<description>US Militar Rank - Staff Sergeant</description>
 		<icon>PawnBadge/Militar/i5-staffsergeant</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Master Sergeant -->
@@ -49,6 +54,7 @@
 		<label>Militar - Master Sergeant</label>
 		<description>US Militar Rank - Master Sergeant</description>
 		<icon>PawnBadge/Militar/i6-master_sergeant</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- First Sergeant -->
@@ -57,6 +63,7 @@
 		<label>Militar - First Sergeant</label>
 		<description>US Militar Rank - First Sergeant</description>
 		<icon>PawnBadge/Militar/i7-first_sergeant</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 	<!-- Sergeant Major -->
@@ -65,6 +72,7 @@
 		<label>Militar - Sergeant Major</label>
 		<description>US Militar Rank - Sergeant Major</description>
 		<icon>PawnBadge/Militar/i8-sergeant_major</icon>
+		<fromBaseMod>True</fromBaseMod>
 	</RR_PawnBadge.BadgeDef>
 	
 </Defs>

@@ -26,6 +26,7 @@ namespace RR_PawnBadge
 
         public static BadgePosition badgePosition = BadgePosition.Top;
         public static BadgeSize badgeSize = BadgeSize.Medium;
+		public static bool disableBaseBadges = false;
 
         public void DoWindowContents(Rect canvas)
         {
@@ -69,6 +70,10 @@ namespace RR_PawnBadge
             {
                 badgeSize = BadgeSize.Large;
             }
+			list.Gap();
+
+			// disable base badges
+			list.CheckboxLabeled("PawnBadge.DisableBaseBadges".Translate(), ref disableBaseBadges);
 
             list.End();
         }
