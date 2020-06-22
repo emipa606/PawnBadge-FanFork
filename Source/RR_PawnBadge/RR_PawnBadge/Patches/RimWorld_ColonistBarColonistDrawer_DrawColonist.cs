@@ -14,7 +14,19 @@ namespace RR_PawnBadge
     {
         const float ICON_WIDTH = 35f;
 
-        private static void Postfix(UnityEngine.Rect rect, Verse.Pawn colonist, Verse.Map pawnMap, bool highlight, bool reordering)
+		private static bool TryGetBadgeDef(CompBadge compBadge, int index, out BadgeDef badgeDef)
+		{
+			badgeDef = DefDatabase<BadgeDef>.GetNamedSilentFail(compBadge.badges[index]);
+			if (badgeDef == null)
+			{
+				Log.Warning($"Pawn Badge failed to find badge def with name \"{compBadge.badges[index]}\". Resetting badge to empty.");
+				compBadge.badges[index] = "";
+				return false;
+			}
+			return true;
+		}
+
+		private static void Postfix(UnityEngine.Rect rect, Verse.Pawn colonist, Verse.Map pawnMap, bool highlight, bool reordering)
         {
             CompBadge cb = colonist.GetComp<CompBadge>();
             if (cb == null) return;
@@ -45,10 +57,13 @@ namespace RR_PawnBadge
                         brect.x += rect.width;
                         break;
                 }
-                GUI.DrawTexture(brect, DefDatabase<BadgeDef>.GetNamed(cb.badges[0]).Symbol, ScaleMode.ScaleToFit);
-            }
+				if (TryGetBadgeDef(cb, 0, out BadgeDef badgeDef))
+				{
+					GUI.DrawTexture(brect, badgeDef.Symbol, ScaleMode.ScaleToFit);
+				}
+			}
 
-            if (cb.badges[1] != "")
+			if (cb.badges[1] != "")
             {
                 Rect brect = new Rect(rect.xMax - iwidth_half, rect.y - iwidth_half, iwidth, iwidth);
                 switch (Settings.badgePosition)
@@ -64,8 +79,11 @@ namespace RR_PawnBadge
                         brect.y += rect.height - ibottommargin;
                         break;
                 }
-                GUI.DrawTexture(brect, DefDatabase<BadgeDef>.GetNamed(cb.badges[1]).Symbol, ScaleMode.ScaleToFit);
-            }
-        }
+				if (TryGetBadgeDef(cb, 1, out BadgeDef badgeDef))
+				{
+					GUI.DrawTexture(brect, badgeDef.Symbol, ScaleMode.ScaleToFit);
+				}
+			}
+		}
     }
 }

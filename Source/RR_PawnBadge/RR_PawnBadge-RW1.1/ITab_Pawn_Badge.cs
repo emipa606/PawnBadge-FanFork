@@ -156,7 +156,7 @@ namespace RR_PawnBadge
 				{
 					Widgets.DrawBox(brect, 3);
 				}
-				TooltipHandler.TipRegion(brect, () => def.description, 3882382 + (int)brect.y * 17);
+				TooltipHandler.TipRegion(brect, () => { return GetBadgeDescription(def); }, 3882382 + (int)brect.y * 17);
 				layout.Next();
 			}
 			if (!Input.GetMouseButton(0))
@@ -164,6 +164,15 @@ namespace RR_PawnBadge
 				badgePainting[i] = false;
 			}
 			Widgets.EndScrollView();
+		}
+
+		private static string GetBadgeDescription(BadgeDef badgeDef)
+		{
+			if (badgeDef.defName == "")
+			{
+				return "PawnBadge.NoBadge".Translate();
+			}
+			return badgeDef.description;
 		}
 
 		private static bool AnyPressed(Widgets.DraggableResult result)
