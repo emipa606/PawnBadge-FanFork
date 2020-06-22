@@ -18,7 +18,7 @@ In your mod's "About/About.xml" file, add the following XML:
 		    <packageId>SaucyPigeon.PawnBadge</packageId>
 		    <displayName>Pawn Badge Fan Fork</displayName>
 		    <downloadUrl>https://github.com/SaucyPigeon/RR_PawnBadge/releases/latest</downloadUrl>
-		    <steamWorkshopUrl></steamWorkshopUrl>
+		    <steamWorkshopUrl>steam://url/CommunityFilePage/2112663412</steamWorkshopUrl>
 	  </li>
 </modDependencies>
 
