@@ -123,4 +123,22 @@
 		<icon>PawnBadge/Skill/Trade</icon>
 	</RR_PawnBadge.BadgeDef>
 	
+	
+	<!-- Crafting -->
+	<RR_PawnBadge.BadgeDef>
+		<defName>Skill_Crafting</defName>
+		<label>Crafting</label>
+		<description>Skill - Crafting</description>
+		<icon>PawnBadge/Skill/Crafting</icon>
+	</RR_PawnBadge.BadgeDef>
+	
+	
+	<!-- Fishing -->
+	<RR_PawnBadge.BadgeDef>
+		<defName>Skill_Fishing</defName>
+		<label>Fishing</label>
+		<description>Skill - Fishing</description>
+		<icon>PawnBadge/Skill/Fishing</icon>
+	</RR_PawnBadge.BadgeDef>
+	
 </Defs>
