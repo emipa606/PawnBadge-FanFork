@@ -77,11 +77,13 @@ namespace RR_PawnBadge
 
             list.End();
         }
+
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look<BadgePosition>(ref badgePosition, "badgePosition", BadgePosition.Top);
             Scribe_Values.Look<BadgeSize>(ref badgeSize, "badgeSize", BadgeSize.Medium);
+			Scribe_Values.Look<bool>(ref disableBaseBadges, "disableBaseBadges", false);
         }
     }
 }

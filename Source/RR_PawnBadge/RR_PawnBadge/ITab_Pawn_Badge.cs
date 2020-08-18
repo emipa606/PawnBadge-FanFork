@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -127,15 +126,11 @@ namespace RR_PawnBadge
 			badgeRect.width -= 16f;
 			LayoutManager layout = new LayoutManager(badgeRect, 40f, 30f);
 			List<BadgeDef> defs = new List<BadgeDef>(DefDatabase<BadgeDef>.AllDefsListForReading.Where(x => !(Settings.disableBaseBadges && x.fromBaseMod)));
-			defs.Insert(0, new BadgeDef("", Mod.GreyTex));
+			defs.Insert(0, new BadgeDef("", Controller.GreyTex));
 
 			badgeRect.height = layout.MaxHeightNeeded(defs.Count());
 
 			Widgets.BeginScrollView(outRect, ref scrollPositions[i], badgeRect, true);
-
-
-
-
 
 			foreach (BadgeDef def in defs)
 			{

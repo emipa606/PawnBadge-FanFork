@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
+	<PawnBadge.ModName>Pawn Badge - Fan Fork</PawnBadge.ModName>
+
     <PawnBadge.BadgeTab>Badge</PawnBadge.BadgeTab>
     <PawnBadge.BadgeNumber>Badge {0} ({1})</PawnBadge.BadgeNumber>
     <PawnBadge.BadgePosition>Badge position</PawnBadge.BadgePosition>
